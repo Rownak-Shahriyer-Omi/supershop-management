@@ -32,7 +32,6 @@ public class PurchaseModelTest {
     JTextField textField_price;
     TableModel tm;
     Object obj;
-    MockedStatic<DbUtils> dbu;
     @Before
     public void setUp() throws Exception {
         connection = Mockito.mock(Connection.class);
@@ -41,7 +40,6 @@ public class PurchaseModelTest {
         mtable = Mockito.mock(JTable.class);
         tm = Mockito.mock(TableModel.class);
         obj = Mockito.mock(Object.class);
-        dbu = Mockito.mockStatic(DbUtils.class);
         pm = new PurchaseModel();
         table = new JTable();
         comboBox = new JComboBox();
